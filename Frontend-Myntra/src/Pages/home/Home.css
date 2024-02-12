@@ -1,0 +1,141 @@
+.thumbs {
+    display: none;
+  }
+  .carousel.carousel-slider .control-arrow {
+    background-color: rgba(0, 0, 0, 0.182);
+  }
+  .HomeCarousel {
+    padding-top: 7rem;
+    height: auto;
+    width: 100%;
+  }
+  /* .imageslider{
+    height: 400px;
+    width: auto;
+
+  } */
+  .homeCategories {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+  }
+  .homeNav {
+    display: none;
+  }
+  .homeColors {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-bottom: 4rem;
+  }
+  .homeCategories > div img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .homeNav > div img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .homeColors > div img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0px;
+  }
+  .homeHeader {
+    font-weight: 600;
+    font-size: 29px;
+    text-align: center;
+    letter-spacing: 5px;
+    margin: 3rem 0 3rem 3rem;
+    word-spacing: 2px;
+    color: rgb(164, 33, 33);
+  }
+  .offerImg{
+    width: 100%;
+  }
+  @media (max-width: 1200px) {
+    .homeHeader {
+      font-weight: 500;
+      font-size: 24px;
+      letter-spacing: 4px;
+      margin: 2rem 0 2rem 2rem;
+      word-spacing: 1px;
+    }
+    .homeColors {
+      margin-bottom: 3rem;
+    }
+  }
+  @media (max-width: 1000px) {
+    .homeHeader {
+      font-size: 22px;
+      letter-spacing: 1px;
+      margin: 1.5rem;
+    }
+    .homeColors {
+      margin-bottom: 3rem;
+    }
+    .HomeCarousel {
+      margin-bottom: -1rem;
+    }
+  }
+  @media (max-width: 920px) {
+    .HomeCarousel {
+      padding-top: 4rem;
+    }
+  }
+  @media (max-width: 800px) {
+    .homeHeader {
+      font-size: 18px;
+      letter-spacing: 1px;
+      margin: 2rem 0 1.2 1.2;
+    }
+    .HomeCarousel {
+      margin-bottom: -1.5rem;
+    }
+    .homeCategories {
+      grid-template-columns: repeat(5, 1fr);
+    }
+    .homeColors {
+      grid-template-columns: repeat(3, 1fr);
+      margin-bottom: 2rem;
+    }
+  }
+  @media (max-width: 520px) {
+    .HomeCarousel {
+      padding-top: 3.6rem;
+    }
+    .homeHeader {
+      font-size: 14px;
+      letter-spacing: 0px;
+      margin: 0.5rem;
+    }
+    .homeCategories {
+      grid-template-columns: repeat(4, 1fr);
+      margin-bottom: 1.6rem;
+    }
+    .homeColors {
+      grid-template-columns: repeat(2, 1fr);
+      margin-bottom: 1.5rem;
+    }
+  }
+  @media (max-width: 440px) {
+    .HomeCarousel {
+      display: none;
+    }
+    .homeNav {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      padding: 3.7rem 0 2px 0;
+      background-color: rgb(236, 236, 236);
+    }
+    .homeHeader {
+      font-size: 12px;
+    }
+  }
+  @media (max-width: 320px) {
+    .homeNav {
+      padding: 3.2rem 0 0 0;
+    }
+  }

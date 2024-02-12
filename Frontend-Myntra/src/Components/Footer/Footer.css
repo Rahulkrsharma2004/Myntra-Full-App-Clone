@@ -1,0 +1,144 @@
+.footer {
+  width: 100%;
+  padding: 4rem 14rem;
+  background-color: #ffffff;
+  box-shadow: rgba(168, 179, 218, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+.footerContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.footerList h4 {
+  line-height: 38px;
+  font-weight: 500;
+}
+
+.footerList ul li a {
+  text-decoration: none;
+  color: rgb(150, 147, 147);
+  line-height: 38px;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  gap: 10px;
+}
+
+.footerList ul li a {
+  text-decoration: none;
+  color: rgb(94, 94, 94);
+  line-height: 38px;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  gap: 10px;
+}
+
+.footerList ul li p {
+  text-decoration: none;
+  color: rgb(94, 94, 94);
+  line-height: 38px;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  gap: 10px;
+}
+
+
+.footerList ul li a:hover{
+  text-decoration: underline;
+  color: rgb(235, 0, 180);
+ 
+}
+
+.footerIcon {
+  font-size: 18px;
+  color: rgb(99, 99, 99);
+}
+
+@media (max-width: 1500px) {
+  .footer {
+    padding: 2rem 7rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer {
+    padding: 2rem 3rem;
+  }
+}
+
+@media (max-width: 1020px) {
+  .footer {
+    padding: 2rem 10rem;
+  }
+
+  .footerContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footerList {
+    margin-bottom: 15px;
+  }
+
+  .footerList h4 {
+    line-height: 28px;
+    font-weight: 500;
+  }
+
+  .footerList ul li a {
+    line-height: 28px;
+    font-size: 13px;
+    gap: 8px;
+  }
+
+  .footerList ul li p {
+    line-height: 28px;
+    font-size: 13px;
+    gap: 8px;
+  }
+
+  .footerIcon {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 740px) {
+  .footer {
+    padding: 2rem 4rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .footerContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .footer {
+    padding: 1.5rem 2rem;
+  }
+
+  .footerList h4 {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .footerList {
+    margin-bottom: 20px;
+  }
+
+  .footerList ul {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 14px;
+    row-gap: 0px;
+  }
+}
+
+@media (max-width: 355px) {
+  .footer {
+    padding: 1.5rem 2rem;
+  }
+}
