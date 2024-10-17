@@ -1,0 +1,181 @@
+.mainDivCart {
+  padding-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+  display: flex;
+  justify-content: space-evenly;
+  /* background-color: blue; */
+}
+.itemBag{
+  /* background-color: #2dc854;  */
+  border: 1px solid #ddd;
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 500px; 
+  height: auto;
+  padding: 10px;
+  margin: 10px 0; 
+  display: flex;  
+  justify-content: space-evenly;
+}
+
+/* .itemBag {
+  display: flex;
+  align-items: center; 
+  width: auto;
+  height: 900px;
+  /* background-color: rgb(212, 192, 192); 
+} */
+
+.imagebag {
+  width:200px; 
+  height: 250px; 
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.sizeOptions span {
+  background-color: #e0e0e0; 
+  border-radius: 4px; 
+  padding: 5px 10px; 
+  margin-right: 10px; 
+  cursor: pointer;
+}
+
+.orderCart1 {
+  border: none;
+  color: #fff;
+  /* background-color: #26d696; */
+  padding: 10px 15px;
+  border-radius: 5px;
+  /* cursor: pointer; */
+  /* transition: background-color 0.3s ease, color 0.3s ease; */
+}
+.deleteItemfromBag {
+  background-color: #ff4e86;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  border: 2px solid rgb(250, 60, 140);
+}
+
+.deleteItemfromBag:hover {
+  background-color: #ffffff;
+  color: rgb(255, 0, 43);
+  transition: .2s;
+}
+
+/* .bagPaymentDiv{
+  padding: 0.5rem;
+  margin-bottom: 10rem;
+  background-color: rgb(117, 187, 187);
+  display: flex;
+  width: 50%;
+  margin: auto;
+  justify-content: center;
+  border: 2px rgb(0, 255, 26) solid;
+} */
+
+.bagPaymentDiv {
+  width: 100%;
+  max-width: 600px; /* Adjust this as needed */
+  margin: 20px auto; /* Centering the div */
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background color */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(38, 255, 0, 0.963); /* Card shadow */
+  text-align: center; /* Center content inside */
+}
+
+.bagPaymentDiv h1 {
+  margin-bottom: 15px; /* Space between headings */
+  color: #333; /* Dark text color */
+}
+
+.bagPaymentDiv h1:first-of-type {
+  text-align: center;
+  color: green;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.bagPaymentDiv h1:nth-of-type(2),
+.bagPaymentDiv h1:nth-of-type(3) {
+  font-size: 1.5rem;
+  color: #555;
+}
+
+.bagPaymentDiv h1 span {
+  font-weight: bold;
+}
+
+.bagPaymentDiv img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.bagPaymentDiv button {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  padding: 8px 20px; /* Padding around the text */
+  font-size: 16px; /* Font size */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.bagPaymentDiv button:hover {
+  background-color: #45a049; /* Darker green on hover */
+  transform: scale(1.05); /* Slightly larger on hover */
+}
+
+.bagPaymentDiv button:active {
+  background-color: #3e8e41; /* Even darker green on click */
+  transform: scale(0.98); /* Slightly smaller on click */
+}
+
+.loader {
+  font-size: 16px;
+  color: #4CAF50;
+  margin-top: 20px;
+}
+
+.successMessage {
+  font-size: 20px;
+  color: #4CAF50;
+  margin-top: 20px;
+}
+
+.successMessage span {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .bagPaymentDiv {
+    padding: 15px;
+  }
+
+  .bagPaymentDiv h1:first-of-type {
+    font-size: 1.8rem;
+  }
+
+  .bagPaymentDiv h1:nth-of-type(2),
+  .bagPaymentDiv h1:nth-of-type(3) {
+    font-size: 1.2rem;
+  }
+}
+
+
+/* @media (max-width: 600px) {
+  
+} */

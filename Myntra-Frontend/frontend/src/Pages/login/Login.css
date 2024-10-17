@@ -1,0 +1,120 @@
+.login {
+    padding-top: 5rem;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    /* background-color: #ffffff; */
+    background: url(https://st2.depositphotos.com/2124221/46809/i/450/depositphotos_468095768-stock-photo-abstract-multicolored-background-poly-pattern.jpg);
+    background-size: cover;
+  }
+  .loginContainer {
+    width: 900px;
+    margin: auto;
+    padding: 2rem 0;
+    display: flex;
+    background-color: rgba(255, 0, 230, 0.084);
+    backdrop-filter: blur(10px);
+  }
+
+  .loginImage {
+    width: 43%;
+  }
+  .loginImage img {
+    width: 100%;
+  }
+  .loginDetail {
+    padding: 2rem 4rem;
+    width: 50%;
+    /* height: 300px; */
+  }
+  .loginDetail > div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+  }
+  .loginDetail > div:nth-child(1) h3,
+  span {
+    color: rgb(0, 0, 0);
+  }
+  .loginDetail > div:nth-child(2) input {
+    width: 100%;
+    padding: 10px;
+    margin: 1rem 0;
+    font-size: 15px;
+    letter-spacing: 1px;
+    /* outline: none; */
+    border: 1px solid rgb(187, 187, 187);
+    color: gray;
+  }
+  .loginDetail > div:nth-child(2) button {
+    width: 100%;
+    padding: 10px;
+    margin: 1rem 0;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background-color: #fd436e;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+    border-radius: 5px;
+  }
+  .loginDetail > div:nth-child(2) p {
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  .loginDetail > div:nth-child(2) p a {
+    color: #f63333;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  .loginInput{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .formInput form input{
+    border-color: black;
+  }
+  @media (max-width: 1000px) {
+    .loginContainer {
+      width: 500px;
+      padding: 0;
+    }
+    .loginImage {
+      display: none;
+    }
+    .loginDetail {
+      padding: 2rem 3rem;
+      width: 100%;
+    }
+  }
+  @media (max-width: 570px) {
+    .login {
+      padding-top: 0rem;
+    }
+    .loginContainer {
+      width: 320px;
+    }
+    .loginDetail {
+      padding: 1rem 1rem;
+    }
+    .loginDetail > div:nth-child(2) p {
+      font-size: 14px;
+    }
+  }
+  @media (max-width: 350px) {
+    .login {
+      background-color: white;
+    }
+    .loginContainer {
+      width: 280px;
+    }
+    .loginDetail {
+      padding: 10px;
+    }
+    .loginDetail > div:nth-child(2) p {
+      font-size: 11px;
+      margin: 2px 0;
+    }
+  }

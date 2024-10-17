@@ -1,0 +1,150 @@
+.itemBox {
+    width: 100%;
+    background-color: white;
+    border: 2px solid rgb(222, 217, 217);
+  }
+  .itemBox:hover {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  .itemImage {
+    position: relative;
+    overflow: hidden;
+    
+  }
+  .itemImage img {
+    width: 100%;
+    cursor: pointer;
+  }
+  .itemImage img {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .itemImage img:hover {
+    transform: scale(1.1);
+  }  
+  .itemBox a {
+    text-decoration: none;
+    color: black;
+  }
+  .itemImage p {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    background-color: rgba(255, 255, 255, 0.628);
+    font-size: 12px;
+    padding: 2px 5px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+  }
+  .itemStars {
+    color: #14958f;
+    font-size: 16px;
+  }
+  .itemDetails {
+    padding: 0 0.6rem;
+    line-height: 24px;
+  }
+  .itemDetails > h4 {
+    font-weight: 600;
+    color: #282c3f;
+    font-size: 16px;
+    height: 25px;
+    overflow: hidden;
+  }
+  .itemDetails > p {
+    color: #535766;
+    font-size: 13px;
+    height: 25px;
+    overflow: hidden;
+  }
+  .itemDetails > div {
+    display: flex;
+    gap: 4px;
+    /* gap: 4px; */
+    align-items: center;
+    font-weight: 600;
+    color: #282c3f;
+    font-size: 14px;
+  }
+  .itemDetails > div s {
+    font-size: 12px;
+    color: gray;
+    font-weight: 400;
+  }
+  .itemDetails > div span {
+    font-size: 12px;
+    color: #ff925a;
+    font-weight: 400;
+  }
+  .btnDiv{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+  } 
+  .AddToWishlistBtn{
+     padding: 9px 2rem;
+     border-radius: 3px;
+     cursor: pointer;
+     border: 2px #ff3f6c solid;
+     color: #ff3f6c;
+     background-color: transparent;
+  }
+  .AddToWishlistBtn:hover{
+    background-color: #ff3f6c;
+    color: rgb(255, 255, 255);
+    transition: 0.1s all ease-in;
+    /* display: block; */
+  }
+  @media (max-width: 720px) {
+    .itemDetails {
+      padding: 0.5rem 0.6rem 2rem 0.6rem;
+      line-height: 24px;
+    }
+  }
+  @media (max-width: 500px) {
+    .itemDetails {
+      padding: 0.5rem 0.6rem 1rem 0.6rem;
+      line-height: 24px;
+    }
+  }
+  @media (max-width: 400px) {
+    .itemDetails {
+      padding: 0rem 0.4rem 1rem 0.4rem;
+      line-height: 20px;
+    }
+    .itemDetails > h4 {
+      font-weight: 500;
+      font-size: 14px;
+      height: 20px;
+    }
+    .itemDetails > p {
+      font-size: 12px;
+      height: 20px;
+    }
+    .itemDetails > div {
+      font-weight: 500;
+      font-size: 12px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .itemDetails > div s {
+      font-size: 10px;
+    }
+    .itemDetails > div span {
+      font-size: 10px;
+    }
+    .itemImage p {
+      bottom: 6%;
+      left: 5%;
+      background-color: rgba(255, 255, 255, 0.634);
+      font-size: 10px;
+      padding: 1px 3px;
+      font-weight: 600;
+    }
+    .itemStars {
+      color: #14958f;
+      font-size: 16px;
+    }
+  }

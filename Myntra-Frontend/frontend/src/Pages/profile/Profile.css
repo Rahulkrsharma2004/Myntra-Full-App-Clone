@@ -1,0 +1,122 @@
+.profile {
+  display: flex;
+  justify-content: center;
+  padding:7rem 0 2rem 0;
+  background-color: #f9f9f9;
+}
+
+.profileCon {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+}
+
+.profileImage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profileImage img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.editProfileBtn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.editProfileBtn:hover {
+  background-color: #0056b3;
+}
+
+.profileDetails h3 {
+  margin-bottom: 15px;
+  text-align: center;
+  color: #333;
+}
+
+.profileDetails div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.profileDetails p {
+  margin: 0;
+  color: #555;
+}
+
+.profileForm input,
+.profileForm select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.profileForm input:focus,
+.profileForm select:focus {
+  border-color: #007bff;
+}
+
+.modalActions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cancelBtn,
+.saveBtn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cancelBtn {
+  background-color: #f44336;
+  color: white;
+}
+
+.cancelBtn:hover {
+  background-color: #d32f2f;
+}
+
+.saveBtn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.saveBtn:hover {
+  background-color: #388e3c;
+}
+
+@media (max-width: 600px) {
+  .profileCon {
+    padding: 15px;
+  }
+
+  .profileDetails h3 {
+    font-size: 1.2em;
+  }
+
+  .editProfileBtn {
+    padding: 8px 16px;
+  }
+}
